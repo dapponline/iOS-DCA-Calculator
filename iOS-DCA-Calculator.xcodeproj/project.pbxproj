@@ -14,6 +14,7 @@
 		918ED1D325E1742600D8A55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918ED1D225E1742600D8A55E /* Assets.xcassets */; };
 		918ED1D625E1742600D8A55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918ED1D425E1742600D8A55E /* LaunchScreen.storyboard */; };
 		918ED1F225E183DA00D8A55E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918ED1F125E183DA00D8A55E /* SearchTableViewCell.swift */; };
+		918ED1F625E1904A00D8A55E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918ED1F525E1904A00D8A55E /* APIService.swift */; };
 		A2D68D977C943C95B664581E /* Pods_iOS_DCA_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6567C590B6A3730DD47A8A5 /* Pods_iOS_DCA_Calculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		918ED1D525E1742600D8A55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918ED1D725E1742600D8A55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918ED1F125E183DA00D8A55E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		918ED1F525E1904A00D8A55E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		9477DF26586FFF2BC02BA0A7 /* Pods-iOS-DCA-Calcualtor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-DCA-Calcualtor.release.xcconfig"; path = "Target Support Files/Pods-iOS-DCA-Calcualtor/Pods-iOS-DCA-Calcualtor.release.xcconfig"; sourceTree = "<group>"; };
 		B6567C590B6A3730DD47A8A5 /* Pods_iOS_DCA_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_DCA_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 				918ED1D225E1742600D8A55E /* Assets.xcassets */,
 				918ED1D425E1742600D8A55E /* LaunchScreen.storyboard */,
 				918ED1D725E1742600D8A55E /* Info.plist */,
+				918ED1F525E1904A00D8A55E /* APIService.swift */,
 			);
 			path = "iOS-DCA-Calculator";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				918ED1CE25E1742500D8A55E /* SearchTableViewController.swift in Sources */,
+				918ED1F625E1904A00D8A55E /* APIService.swift in Sources */,
 				918ED1F225E183DA00D8A55E /* SearchTableViewCell.swift in Sources */,
 				918ED1CA25E1742500D8A55E /* AppDelegate.swift in Sources */,
 				918ED1CC25E1742500D8A55E /* SceneDelegate.swift in Sources */,
