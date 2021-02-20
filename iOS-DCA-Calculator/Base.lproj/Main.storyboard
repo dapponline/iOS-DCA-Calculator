@@ -10,19 +10,71 @@
         <!--Search Table View Controller-->
         <scene sceneID="Mfg-zP-Jny">
             <objects>
-                <tableViewController id="YSv-oj-Jde" customClass="SearchTableViewController" customModule="iOS_DCA_Calcualtor" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YSv-oj-Jde" customClass="SearchTableViewController" customModule="iOS_DCA_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lrj-w9-9dK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hRa-xn-fpa">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="88" id="hRa-xn-fpa" customClass="SearchTableViewCell" customModule="iOS_DCA_Calculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRa-xn-fpa" id="Dol-3i-3De">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4py-3E-Yaj">
+                                            <rect key="frame" x="16" y="8" width="382" height="72"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CX8-jA-69E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="206" height="72"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTu-oI-nB5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="206" height="54"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equity USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSt-md-h6F">
+                                                            <rect key="frame" x="0.0" y="54" width="206" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="2H9-w6-VaT"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="11"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-5h-Awj">
+                                                    <rect key="frame" x="222" y="0.0" width="160" height="72"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Booring Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nJ-4K-VDz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="72"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="6b3-Yf-mGY"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4py-3E-Yaj" firstAttribute="top" secondItem="Dol-3i-3De" secondAttribute="top" constant="8" id="XZ6-ts-nhU"/>
+                                        <constraint firstAttribute="trailing" secondItem="4py-3E-Yaj" secondAttribute="trailing" constant="16" id="lAk-gX-dO1"/>
+                                        <constraint firstAttribute="bottom" secondItem="4py-3E-Yaj" secondAttribute="bottom" constant="8" id="oKN-Ol-emm"/>
+                                        <constraint firstItem="4py-3E-Yaj" firstAttribute="leading" secondItem="Dol-3i-3De" secondAttribute="leading" constant="16" id="pAN-RC-2fm"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="assetNameLabel" destination="5nJ-4K-VDz" id="VLZ-A9-WS8"/>
+                                    <outlet property="assetSymbolLabel" destination="mTu-oI-nB5" id="osI-eg-En0"/>
+                                    <outlet property="assetTypeLabel" destination="kSt-md-h6F" id="UQd-ul-0aj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
