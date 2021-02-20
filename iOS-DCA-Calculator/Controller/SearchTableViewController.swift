@@ -22,6 +22,7 @@ class SearchTableViewController: UITableViewController {
     
     private let apiService = APIService()
     private var subsribers = Set<AnyCancellable>()
+    private var searchResults: SearchResults?
     @Published private var searchQuery = String()
     
     override func viewDidLoad() {
@@ -45,6 +46,8 @@ class SearchTableViewController: UITableViewController {
                             break
                     }
                 } receiveValue: { (searchResults) in
+                    self.searchResults = searchResults
+                    self.tableView.reloadData()
                     print(searchResults)
                 }.store(in: &subsribers)
                 print(searchQuery)
@@ -52,15 +55,18 @@ class SearchTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return searchResults?.items.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! SearchTableViewCell
+        if let searchResults = self.searchResults {
+            let searchResult  = searchResults.items[indexPath.row]
+            cell.configure(with: searchResult)
+        }
+        
         return cell
     }
-    
-
 
 }
 
