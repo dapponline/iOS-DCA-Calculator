@@ -90,6 +90,7 @@
 		918ED1C825E1742500D8A55E /* iOS-DCA-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				918ED1FC25E1947E00D8A55E /* Service */,
 				918ED1F825E1928900D8A55E /* Model */,
 				918ED1F025E183B500D8A55E /* Controller */,
 				918ED1EF25E183AB00D8A55E /* View */,
@@ -99,7 +100,6 @@
 				918ED1D225E1742600D8A55E /* Assets.xcassets */,
 				918ED1D425E1742600D8A55E /* LaunchScreen.storyboard */,
 				918ED1D725E1742600D8A55E /* Info.plist */,
-				918ED1F525E1904A00D8A55E /* APIService.swift */,
 			);
 			path = "iOS-DCA-Calculator";
 			sourceTree = "<group>";
@@ -126,6 +126,14 @@
 				918ED1F925E1929A00D8A55E /* SearchResults.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		918ED1FC25E1947E00D8A55E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				918ED1F525E1904A00D8A55E /* APIService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
