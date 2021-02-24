@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		917FE58A25E6819500BE1C76 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FE58925E6819500BE1C76 /* SearchPlaceholderView.swift */; };
+		917FE58E25E68BC000BE1C76 /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FE58D25E68BC000BE1C76 /* UIAnimatable.swift */; };
+		917FE59225E6BF6000BE1C76 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FE59125E6BF6000BE1C76 /* TimeSeriesMonthlyAdjusted.swift */; };
 		918ED1CA25E1742500D8A55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918ED1C925E1742500D8A55E /* AppDelegate.swift */; };
 		918ED1CC25E1742500D8A55E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918ED1CB25E1742500D8A55E /* SceneDelegate.swift */; };
 		918ED1CE25E1742500D8A55E /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918ED1CD25E1742500D8A55E /* SearchTableViewController.swift */; };
@@ -23,6 +26,9 @@
 		26A092543BC3826EBF75716E /* Pods-iOS-DCA-Calcualtor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-DCA-Calcualtor.debug.xcconfig"; path = "Target Support Files/Pods-iOS-DCA-Calcualtor/Pods-iOS-DCA-Calcualtor.debug.xcconfig"; sourceTree = "<group>"; };
 		3254A85409BF6142209ADD3A /* Pods-iOS-DCA-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-DCA-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-iOS-DCA-Calculator/Pods-iOS-DCA-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		3BF9A02C2A1A2AF325B07614 /* Pods-iOS-DCA-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-DCA-Calculator.release.xcconfig"; path = "Target Support Files/Pods-iOS-DCA-Calculator/Pods-iOS-DCA-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		917FE58925E6819500BE1C76 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		917FE58D25E68BC000BE1C76 /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		917FE59125E6BF6000BE1C76 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		918ED1C625E1742500D8A55E /* iOS-DCA-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-DCA-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		918ED1C925E1742500D8A55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918ED1CB25E1742500D8A55E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		917FE58C25E68BAD00BE1C76 /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				917FE58D25E68BC000BE1C76 /* UIAnimatable.swift */,
+			);
+			path = Protocal;
+			sourceTree = "<group>";
+		};
 		918ED1BD25E1742500D8A55E = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +104,7 @@
 		918ED1C825E1742500D8A55E /* iOS-DCA-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				917FE58C25E68BAD00BE1C76 /* Protocal */,
 				918ED1FC25E1947E00D8A55E /* Service */,
 				918ED1F825E1928900D8A55E /* Model */,
 				918ED1F025E183B500D8A55E /* Controller */,
@@ -108,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				918ED1F125E183DA00D8A55E /* SearchTableViewCell.swift */,
+				917FE58925E6819500BE1C76 /* SearchPlaceholderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				918ED1F925E1929A00D8A55E /* SearchResults.swift */,
+				917FE59125E6BF6000BE1C76 /* TimeSeriesMonthlyAdjusted.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,11 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				918ED1CE25E1742500D8A55E /* SearchTableViewController.swift in Sources */,
+				917FE58E25E68BC000BE1C76 /* UIAnimatable.swift in Sources */,
 				918ED1F625E1904A00D8A55E /* APIService.swift in Sources */,
 				918ED1F225E183DA00D8A55E /* SearchTableViewCell.swift in Sources */,
 				918ED1CA25E1742500D8A55E /* AppDelegate.swift in Sources */,
+				917FE59225E6BF6000BE1C76 /* TimeSeriesMonthlyAdjusted.swift in Sources */,
 				918ED1FA25E1929A00D8A55E /* SearchResults.swift in Sources */,
 				918ED1CC25E1742500D8A55E /* SceneDelegate.swift in Sources */,
+				917FE58A25E6819500BE1C76 /* SearchPlaceholderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
